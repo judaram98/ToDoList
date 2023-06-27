@@ -32,7 +32,6 @@ function App() {
         isCompleted: false,
       },
     ]);
-    console.log(tasks);
   }
 
   function deleteTaskById(taskId) {

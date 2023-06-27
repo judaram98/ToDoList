@@ -14,6 +14,7 @@ export function Header({ onAddTask }) {
           event.preventDefault();
           onAddTask(title);
           setTitle("");
+          document.getElementById("textArea").value = "";
         }}
         className={styles.newTaskForm}
       >
@@ -21,6 +22,7 @@ export function Header({ onAddTask }) {
           onChange={(value) => setTitle(value.target.value)}
           type="text"
           placeholder="Add new task"
+          id="textArea"
         />
         <button>
           Create
